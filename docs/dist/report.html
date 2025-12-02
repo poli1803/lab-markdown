@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<h1 id="лабораторна-робота-3">Лабораторна робота №3</h1>
+<p>Виконала студентка групи ІКМ-123 Солом’яна Поліна</p>
+<h2
+id="тема-markdown---створення-документа-діаграми-та-публікація-на-github">Тема:
+Markdown - створення документа, діаграми та публікація на Github</h2>
+<h3 id="мета-роботи">Мета роботи</h3>
+<p>Навчитися створювати структурований документ у Markdown, додавати
+списки, математичні формули, діаграми (Mermaid), конвертувати Markdown у
+HTML/DOCX/PDF і опублікувати результат на Github.</p>
+<h3 id="мої-улюблені-книги">Мої улюблені книги</h3>
+<ul>
+<li><strong>“Час жити і вмирати”</strong> - <em>Еріх Марія
+Ремарк</em></li>
+<li><strong>“Гарних дівчат не вбивають”</strong> - <em>Холлі
+Джексон</em></li>
+<li><strong>“1984”</strong> - <em>Джордж Оруел</em></li>
+<li><strong>“Гордість і упередженість”</strong> - <em>Джейн
+Остін</em></li>
+<li><strong>“Пригоди Шерлока Холмса”</strong> - <em>Артур Конан
+Дойл</em></li>
+</ul>
+<h3 id="відомі-математичні-формули">Відомі математичні формули</h3>
+<h4 id="закон-ома-для-ділянки-ланцюга">1. Закон Ома для ділянки
+ланцюга</h4>
+<p>Закон, що пов’язує силу струму
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>),
+напругу
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>)
+та опір
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>),
+описується формулою:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">I = \frac{U}{R}</annotation></semantics></math></p>
+<h4 id="формула-ньютона-лейбніца">2. Формула Ньютона-Лейбніца</h4>
+<p>Пов’язує поняття інтегрування та диференціювання, як показано у
+рівнянні:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mspace width="0.167em"></mspace><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b} f(x) \,dx=F(b) - F(a)</annotation></semantics></math></p>
+<h4 id="теорема-піфагора">3. Теорема Піфагора</h4>
+<p>Формула, що пов’язує довжини сторін прямокутного трикутника:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2 + b^2 = c^2</annotation></semantics></math></p>
+<h3 id="проста-діагарама">Проста діагарама</h3>
+<pre class="mermaid"><code>graph TD
+   A[Початок] --&gt; B{Хочеш чогось гарячого?};
+   B -- Так --&gt; C[Замов суп або борщ];
+   B -- Ні --&gt; D[Обери салат або сендвіч];
+   C --&gt; E[Приємного апетиту!];
+   D --&gt; E;</code></pre>
+<h3 id="таблиця">Таблиця</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">№</th>
+<th style="text-align: left;">Назва книги та автор</th>
+<th style="text-align: center;">Кількість сторінок</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">“Час жити і помирати” - Еріх Марія
+Ремарк</td>
+<td style="text-align: center;">400</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">“Гарних дівчат не вбивають” - Холлі
+Джексон</td>
+<td style="text-align: center;">272</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">“1984” - Джордж Оруел</td>
+<td style="text-align: center;">328</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">“Гордість і упередженість” - Джейн
+Остін</td>
+<td style="text-align: center;">384</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">“Пригоди Шерлока Холмса” - Артур Конан
+Дойл</td>
+<td style="text-align: center;">352</td>
+</tr>
+</tbody>
+</table>
+<h3 id="висновки">Висновки</h3>
+<p>В ході лабораторної роботи успішно досягли поставленої мети - набуття
+навичок створення структурованого документа у форматі Markdown.
+Опанували ключовий синтаксис, реалізували оформлення ієрархічних
+заголовків, маркованих списків, математичних формул та побудували просту
+діаграму.</p>
+</body>
+</html>
